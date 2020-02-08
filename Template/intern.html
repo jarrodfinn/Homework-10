@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,31 +12,46 @@
     </link>
     <title>Employee List</title>
 
-    
+
     <style>
         .card-header {
-            background-color:rgba(250, 4, 4, 0.966)
-        }
-        .top {
-          background-color: rgb(238, 241, 46);
-        }
-        .card {
-            box-shadow: 5px 10px lightgray;
+            background-color: rgba(250, 4, 4, 0.966)
         }
 
+
+        .top {
+            background-color: rgb(238, 241, 46);
+        }
+
+
+        .card {
+            box-shadow: 5px 10px rgb(238, 241, 46);
+        }
+
+
         .card-columns {
-            @include media-breakpoint-only(lg) {
+            @include media-breakpoint(lg) {
                 column-count: 4;
             }
 
-            html,
+            html {
+                padding: 20px;
+                margin: 20px;
+            }
+
             body {
                 padding: 20px;
                 margin: 20px;
             }
 
-            html,
-            body,
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 100%;
+            }
+
             .wrapper {
                 height: 100%;
             }
@@ -57,51 +71,17 @@
                     <div class="col mb-4">
                         <div class="card border-dark mb-4" style="width: 19rem;">
                             <div class="card-header">
-                              <h5></h5>
-                              <h5><i class="fas fa-mug-hot"></i>Manager</h5>
+                                <h5></h5>
+                                <h5><i class="fas fa-mug-hot"></i>Manager</h5>
                             </div>
                             <div class="card-body text-dark">
                                 <div class="card" style="width: 16rem;">
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong></li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Office: </strong></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col mb-4">
-                        <div class="card border-dark mb-4" style="width: 19rem;">
-                            <div class="card-header">
-                              <h5></h5>
-                              <h5><i class="fas fa-glasses"></i>Engineer</h5>
-                            </div>
-                            <div class="card-body text-dark">
-                                <div class="card" style="width: 16rem;">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong></li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Github: </strong></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col mb-4">
-                        <div class="card border-dark mb-4" style="width: 19rem;">
-                            <div class="card-header">
-                              <h5></h5>
-                                <h5><i class="fas fa-glasses"></i>Engineer</h5>
-                            </div>
-                            <div class="card-body text-dark">
-                                <div class="card" style="width: 16rem;">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong></li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Github: </strong></li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>
+                                        </li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Office: </strong>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -118,8 +98,50 @@
                                 <div class="card" style="width: 16rem;">
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong></li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Github: </strong></li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>
+                                        </li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Github: </strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4">
+                        <div class="card border-dark mb-4" style="width: 19rem;">
+                            <div class="card-header">
+                                <h5></h5>
+                                <h5><i class="fas fa-glasses"></i>Engineer</h5>
+                            </div>
+                            <div class="card-body text-dark">
+                                <div class="card" style="width: 16rem;">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>
+                                        </li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Github: </strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4">
+                        <div class="card border-dark mb-4" style="width: 19rem;">
+                            <div class="card-header">
+                                <h5></h5>
+                                <h5><i class="fas fa-glasses"></i>Engineer</h5>
+                            </div>
+                            <div class="card-body text-dark">
+                                <div class="card" style="width: 16rem;">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>
+                                        </li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Github: </strong>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -136,8 +158,10 @@
                                 <div class="card" style="width: 16rem;">
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong></li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Lindkedin: </strong></li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>
+                                        </li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Lindkedin: </strong>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
